@@ -1,0 +1,28 @@
+ <div class="text-center">
+ 	<h1 >Word Translator</h1>
+ 	<h5>Powered by AngularJs</h5>
+ 	<div class="row">
+ 		<div class="col-md-6 col-md-offset-3">
+ 			<form (ngSubmit)="onSubmit()" class="form-inline well" id="translate">
+ 				<input type="text" class="form-control" id="name"  name="textInput" 
+ 				[(ngModel)]="textInput" required placeholder="Enter the right word">	   	
+ 				<select [(ngModel)]="lang" class="form-control" name="lang" id="lang">
+ 					<option value="ru">Rusian</option>
+ 					<option value="zh">Chinese</option>
+ 					<option value="bn">Bengali</option>
+ 					<option value="ja">Japanese</option>
+ 					<option value="ca">Urdu</option>
+ 					<option value="hi">Hindi</option>
+ 					<option value="ko">Korean</option>
+ 					<option value="es">Spanish</option>
+ 					<option value="tr">Turkish</option>
+ 					<option value="it">Italian</option>
+ 					<option value="el">Greek</option>
+ 				</select>
+ 				<input class="btn btn-primary" type="submit" value="Submit">
+ 			</form>
+ 		</div>
+ 	</div>
+ 	<h2  class="text-success">{{translateword}}</h2>	  
+ </div>
+
